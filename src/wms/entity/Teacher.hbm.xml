@@ -9,8 +9,8 @@
 		This class contains the teacher detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="id" column="id " type="int" />	
-		<property name="t_account" column="t_account " type="string" />	
+		<id name="id" column="id" type="int" />
+		<property name="t_account" column="t_account" type="string" />
 		<property name="t_name" column="t_name" type="string"/>
 		<property name="t_sex" column="t_sex" type="string"/>	
 		<property name="t_dept" column="t_dept" type="string"/>	

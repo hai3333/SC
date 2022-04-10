@@ -22,21 +22,21 @@
 
 		//主页
 		$("a.navbar-brand").click(function() {
-			$("iframe").attr("src", "/ssh_hw_manage/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account }");
+			$("iframe").attr("src", "/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"); 
 		});
 
 		//个人设置
 		$("a.personalseting").click(function() {
-			$("iframe").attr("src", "/ssh_hw_manage/student/s_personalseting");
+			$("iframe").attr("src", "student/s_personalseting");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>个人设置</li>");
 		});
 
 		//上传作业
 		$("a.upload").click(function() {
-			$("iframe").attr("src", "/ssh_hw_manage/student/s_uploadwork_jsp?s_account=${student.s_account }");
+			$("iframe").attr("src", "student/s_uploadwork_jsp?s_account=${student.s_account }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>上传作业</li>");
 		});
@@ -50,7 +50,7 @@
 
 		//查看批阅
 		$("a.showcheck").click(function() {
-			$("iframe").attr("src", "/ssh_hw_manage/student/s_showcheck?s_account=${student.s_account }");
+			$("iframe").attr("src", "student/s_showcheck?s_account=${student.s_account }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>查看批阅</li>");
 		});
@@ -130,9 +130,9 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div style="height: 1000px;">
-							<iframe src="/ssh_hw_manage/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account}" frameborder="0"
+							<iframe src="student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account}" frameborder="0"
 								seamless="seamless" marginheight="0px" marginwidth="0px"
-								width="100%" height="100%""></iframe>
+								width="100%" height="100%"></iframe>
 						</div>
 					</div>
 				</div>

@@ -22,7 +22,7 @@
 		//作业总览
 		$("a.allworks").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_allworks?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_allworks?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>作业总览</li>");
 		});
@@ -30,7 +30,7 @@
 		//发布作业
 		$("a.publish").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_publishwork");
+			$("iframe").attr("src", "teacher/t_publishwork");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>发布作业</li>");
 		});
@@ -38,7 +38,7 @@
 		//公告总览
 		$("a.allnotice").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_allnotice?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_allnotice?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>公告总览</li>");
 		});
@@ -46,7 +46,7 @@
 		//发布公告
 		$("a.notice").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_publishnotice");
+			$("iframe").attr("src", "teacher/t_publishnotice");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>发布公告</li>");
 		});
@@ -54,7 +54,7 @@
 		//提交统计
 		$("a.statistics").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_statistics?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_statistics?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>提交统计</li>");
 		});
@@ -62,7 +62,7 @@
 		//个人设置
 		$("a.t_personalseting").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_personalseting");
+			$("iframe").attr("src", "teacher/t_personalseting");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>个人设置</li>");
 		});
@@ -163,7 +163,7 @@
 						<div style="height: 1000px;">
 							<iframe src="/ssh_hw_manage/teacher/t_allworks?t_account=${teacher.t_account  }" frameborder="0"
 								seamless="seamless" scrolling="no" marginheight="0px" marginwidth="0px"
-								width="100%" height="100%""></iframe>
+								width="100%" height="100%"></iframe>
 						</div>
 					</div>
 				</div>

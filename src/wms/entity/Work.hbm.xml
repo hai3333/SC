@@ -9,8 +9,8 @@
 		This class contains the work detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="w_id" column="w_id " type="int" />	
-		<property name="w_title" column="w_title " type="string" />	
+		<id name="w_id" column="w_id" type="int" />
+		<property name="w_title" column="w_title" type="string" />
 		<property name="w_content" column="w_content" type="string"/>
 		<property name="w_deadline" column="w_deadline" type="string"/>	
 		<property name="w_course" column="w_course" type="string"/>	

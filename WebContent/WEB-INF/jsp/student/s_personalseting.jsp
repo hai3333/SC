@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
 	<title>学生个人设置</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
 										修改姓名
 									</h4>
 								</div>
-								<form action="/ssh_hw_manage/student/updateStudentName"  method = "post" >
+								<form action="student/updateStudentName"  method = "post" >
 								<div class="modal-body">
 									<input type = "hidden" name = "id"  value = "${student.id }"/>								<!--修改内容提示  -->
 									<input type = "hidden" name = "s_account"  value = "${student.s_account }"/>
@@ -73,7 +73,7 @@
 										修改密码
 									</h4>
 								</div>
-								<form action="/ssh_hw_manage/student/updateStudentPassword" method = "post">
+								<form action="student/updateStudentPassword" method = "post">
 								<div class="modal-body">
 									<input type = "hidden" name = "id"  value = "${student.id }"/>								<!--修改内容提示  -->
 									<input type = "hidden" name = "s_account"  value = "${student.s_account }"/>
@@ -101,8 +101,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

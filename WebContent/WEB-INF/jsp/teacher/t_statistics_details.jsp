@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href=BootStrap/css/bootstrap.min.css">
     <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
 	<title>教师提交统计详细</title>
     <script type="text/javascript">
     //panel-check操作
@@ -108,13 +108,13 @@
 					                            		if( chW.get(j).getCh_score() ==0 ){
 					                            %>			<td><%=chW.get(j).getCh_checkTime() %></td><!-- 此时为null -->
 					                            			<td><a type="button" class="check" onclick="check('<%=student.get(i).getS_account() %>','<%=student.get(i).getS_name() %>','<%=w_title %>','<%=chW.get(j).getCh_id() %>')"  href = "javascript:void(0)">批阅</a></td>
-					                            			<td><a href="/ssh_hw_manage/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
+					                            			<td><a href="teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
 					                            <%	}
 					                            		else{
 					                            %>			
 					                            			<td><%=chW.get(j).getCh_checkTime().toString().substring(0, chW.get(j).getCh_checkTime().toString().length()-2)  %></td><!-- 此时已有时间 -->
 					                            			<td><a style="color:#B23AEE;" type="button" class="check" onclick="check('<%=student.get(i).getS_account() %>','<%=student.get(i).getS_name() %>','<%=w_title %>','<%=chW.get(j).getCh_id() %>')"  href = "javascript:void(0)">已批阅</a></td>
-					                            			<td><a href="/ssh_hw_manage/teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
+					                            			<td><a href="teacher/Download?Wno=<%=Wno%>&c_id=<%=c_id%>&Uptime=<%=chW.get(j).getCh_upTime().toString().substring(0,chW.get(j).getCh_upTime().toString().length()-2) %>">下载</a></td>
 					                            <%
 					                            		}
 					                            %>
@@ -147,7 +147,7 @@
                 </div>
 			<!-- 批改面板 -->
                 <div class="panel-check" style="background-color: #F0F0F0;width: 100%;height: 100%; position: absolute;display: none;">
-                	<form action="/ssh_hw_manage/teacher/t_check" method = "post">
+                	<form action="teacher/t_check" method = "post">
                 		<!-- 隐藏表单传递批改号 -->
                 		<input name = "ch_id" class = "ch_id" type = "hidden" value = "666">
                 		<input name = "c_id" class = "c_id" type = "hidden" value = "<%=c_id%>"><!-- 班级号 -->

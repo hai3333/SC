@@ -11,10 +11,10 @@
     <title>管理员界面</title>
     
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-2.1.1.min.js"></script>
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="BootStrap/js/jquery-2.1.1.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
     
     <!--管理员的整体框架-->
 	<script type="text/javascript">
@@ -24,49 +24,49 @@
 			
 			//教师总览，删除，修改
 			$("a.allT").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_teachermanage");
+				$("iframe").attr("src","manager/m_teachermanage");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>教师总览</li>");
 			});
 			
 			//教师添加
 			$("a.addT").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_addteacher");
+				$("iframe").attr("src","manager/m_addteacher");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>教师添加</li>");
 			});
 			
 			//学生总览，删除，修改
 			$("a.allS").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_studentmanage");
+				$("iframe").attr("src","manager/m_studentmanage");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>学生总览</li>");
 			});
 			
 			//学生添加
 			$("a.addS").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_addstudent");
+				$("iframe").attr("src","manager/m_addstudent");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>学生添加</li>");
 			});
 			
 			//课程总览，删除，修改
 			$("a.allC").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_coursemanage");
+				$("iframe").attr("src","manager/m_coursemanage");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>课程总览</li>");
 			});
 			
 			//课程添加
 			$("a.addC").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_addcourse");
+				$("iframe").attr("src","manager/m_addcourse");
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>课程添加</li>");
 			});
 			
 			//个人设置
 			$("a.m_personalseting").click(function(){
-				$("iframe").attr("src","/ssh_hw_manage/manager/m_personalseting");//?m_name=${manager.m_name}
+				$("iframe").attr("src","manager/m_personalseting");//?m_name=${manager.m_name}
 				//面包屑导航
 				$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>个人设置</li>");
 			});
@@ -148,7 +148,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<!-- <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px;"></a> -->
-							<img src="/ssh_hw_manage/img/header.gif" class = "img-circle" style="width: 40px;height: 40px;">
+							<img src="img/header.gif" class = "img-circle" style="width: 40px;height: 40px;">
 						</li>
 						<li><strong><span style="line-height:55px;">管理员:&nbsp;${manager.m_name  }</span></strong></li>
 						<li class="dropdown">
@@ -178,7 +178,7 @@
 			<div class="row-fluid" ><!--m_teachermanage.html   -->
 				<div class="span12">
 					<div style="height: 1000px;"><!-- seamless="seamless" 无边框或滚动条 -->
-					    <iframe src="/ssh_hw_manage/manager/m_teachermanage" frameborder="0" seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%""></iframe>
+					    <iframe src="manager/m_teachermanage" frameborder="0" seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%"></iframe>
 						
 					</div>
 				</div>

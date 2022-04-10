@@ -9,8 +9,8 @@
 		This class contains the student detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="id" column="id " type="int" />	
-		<property name="s_account" column="s_account " type="string" />	
+		<id name="id" column="id" type="int" />
+		<property name="s_account" column="s_account" type="string" />
 		<property name="s_name" column="s_name" type="string"/>
 		<property name="s_sex" column="s_sex" type="string"/>	
 		<property name="s_c_id" column="s_c_id" type="string"/>	
