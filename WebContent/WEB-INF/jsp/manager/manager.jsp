@@ -179,7 +179,7 @@
 				<div class="span12">
 					<div style="height: 1000px;"><!-- seamless="seamless" 无边框或滚动条 -->
 					    <iframe src="manager/m_teachermanage" frameborder="0" seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%"></iframe>
-						
+
 					</div>
 				</div>
 			</div> 

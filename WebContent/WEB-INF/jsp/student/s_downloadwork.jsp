@@ -13,7 +13,7 @@
     <!-- 可选: 包含 jQuery 库 -->
     <script src="BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/BootStrap/js/bootstrap.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
 	<title>下载作业</title>
 	<!--学生的整体框架-->
 

@@ -9,32 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
 	<title>管理员-个人设置</title>
 	
 	<!-- 验证的包 -->
-	<script src="js/jQuery_Validate/jquery-validation-1.14.0/lib/jquery.js"></script>
-	<script src="js/jQuery_Validate/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
-	<script src="js/jQuery_Validate/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
-	
-	<script type="text/javascript">
-		/* window.onload=function(){
+	<script src="../js/jQuery_Validate/jquery-validation-1.14.0/lib/jquery.js"></script>
+	<script src="../js/jQuery_Validate/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+	<script src="../js/jQuery_Validate/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script>
+		/*window.onload=function(){
 			function msg(){	
 				var msg = "${msg}";
 				if( msg.length != 0 ){	//如果不等于空，说明返回来时出错
 					alert("${msg}");
 				}
 			} 
-		} */
-		/* window.onload = msg;
+		}
+		 window.onload = msg;
 		//若管理员信息修改有错-->则提示管理员信息修改出错
 		function msg(){	
 			var msg = "${msg}";
 			if(msg!=null){	//如果不等于空，说明返回来时出错
 				alert("${msg}");
 			}
-		} */
-		
+		}
+		*/
 		$.validator.setDefaults({
 			
 		});
@@ -123,7 +122,7 @@
 									 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 									<h4 class="modal-title" id="myModalLabel">修改账号</h4>
 								</div>
-								<form action="manager/updateManagerAccount" method = "post">
+								<form action="updateManagerAccount" method = "post">
 								<div class="modal-body">
 									<input type="hidden" name="id" value="${manager.id }"/>		<!--修改内容提示  -->
 									原账号:<input type="text" name="oldaccount" value="${manager.m_account }" readonly="readonly" disabled > <br><br>
@@ -146,7 +145,7 @@
 									 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 									<h4 class="modal-title" id="myModalLabel">修改姓名</h4>
 								</div>
-								<form action="manager/updateManagerName" method = "post">
+								<form action="updateManagerName" method = "post">
 								<div class="modal-body">
 									<input type="hidden" name="id" value="${manager.id }"/>		<!--修改内容提示  -->
 									原名:<input type="text" name="oldname" value="${manager.m_name }" readonly="readonly" disabled > <br><br>
@@ -171,7 +170,7 @@
 										修改密码
 									</h4>
 								</div>
-								<form class="cmxform" id="form3" action="manager/updateManagerPassword" method = "post">
+								<form class="cmxform" id="form3" action="updateManagerPassword" method = "post">
 									<div class="modal-body">
 										<p><input type="hidden" name="id" value="${manager.id }" /></p>		<!--修改内容提示  -->
 											<!-- <label >原&nbsp;&nbsp;密&nbsp;码:</label> -->
@@ -198,8 +197,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="BootStrap/js/bootstrap.min.js"></script>
+    <script src="../../BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

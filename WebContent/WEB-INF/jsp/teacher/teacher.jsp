@@ -161,7 +161,7 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div style="height: 1000px;">
-							<iframe src="/ssh_hw_manage/teacher/t_allworks?t_account=${teacher.t_account  }" frameborder="0"
+							<iframe src="/t_allworks?t_account=${teacher.t_account}" frameborder="0"
 								seamless="seamless" scrolling="no" marginheight="0px" marginwidth="0px"
 								width="100%" height="100%"></iframe>
 						</div>
