@@ -46,11 +46,7 @@
 	<%
 		int a = 0;
 	%>
-	
-	<div class="text-center">
-		<strong style="font-size:20px;">教师总览</strong>
-	</div>
-	<table class="table table-hover table-bordered table-striped">
+	<table class="table table-hover table-bordered table-striped" >
 		<thead>
 			<tr>
 				<th>序号</th>

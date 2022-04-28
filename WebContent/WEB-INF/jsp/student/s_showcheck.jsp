@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
     <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 	<title>查看批阅</title>
 	<!--学生的整体框架-->
 
