@@ -197,8 +197,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="../../BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="../../BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>
