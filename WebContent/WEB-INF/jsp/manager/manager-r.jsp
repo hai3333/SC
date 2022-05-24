@@ -144,7 +144,7 @@
 							
 						</ul>
 					</div>
-					
+
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<!-- <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px;"></a> -->
@@ -175,9 +175,9 @@
 			<hr>
 			
 			<!--iframe框架内容-->
-			<div class="row-fluid" ><!--m_teachermanage.html   -->
+			<div class="row-fluid"  style="width: 100%"><!--m_teachermanage.html   -->
 				<div class="span12">
-					<div style="height: 1000px;"><!-- seamless="seamless" 无边框或滚动条 -->
+					<div style="height: 100%;"><!-- seamless="seamless" 无边框或滚动条 -->
 					    <iframe src="manager/m_teachermanage" frameborder="0" seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%"></iframe>
 
 					</div>
