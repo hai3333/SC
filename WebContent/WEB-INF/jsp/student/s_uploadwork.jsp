@@ -43,7 +43,7 @@
 		String clazz = session.getAttribute("clazz").toString();
 	%>
 	<!--整个页面栅格-->
-	<div class="container-fluid " style="background-color: blasck;padding: 0px;margin-left: 4%;">
+	<div class="container-fluid " style="background-color: deepskyblue;padding: 0px;margin-left: 4%;">
 		<div class="row-fluid">
 			<div class="span12">
 			
