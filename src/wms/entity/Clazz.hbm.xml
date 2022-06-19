@@ -9,8 +9,8 @@
 		This class contains the Clazz detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="id" column="id " type="int" />	
-		<property name="c_id" column="c_id " type="string" />	
+		<id name="id" column="id" type="int" />
+		<property name="c_id" column="c_id" type="string" />
 		<property name="c_count" column="c_count" type="int"/>
 	</class>
 </hibernate-mapping>

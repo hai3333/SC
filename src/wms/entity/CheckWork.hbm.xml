@@ -9,9 +9,9 @@
 		This class contains the checkwork detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="ch_id" column="ch_id " type="int" />	
-		<property name="ch_s_account" column="ch_s_account " type="string" />	
-		<property name="ch_c_id" column="ch_c_id " type="string" />	
+		<id name="ch_id" column="ch_id" type="int" />
+		<property name="ch_s_account" column="ch_s_account" type="string" />
+		<property name="ch_c_id" column="ch_c_id" type="string" />
 		<property name="ch_w_id" column="ch_w_id" type="int"/>
 		<property name="ch_score" column="ch_score" type="int"/>	
 		<property name="ch_mark" column="ch_mark" type="string"/>	

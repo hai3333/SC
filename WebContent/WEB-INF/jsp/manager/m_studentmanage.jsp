@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
 	<title>学生管理</title>
 	
 	<script type="text/javascript">
 		//删除学生
 		function del(id){
-			$.get("/ssh_hw_manage/manager/delStudent?id=" + id,function(data){
+			$.get("delStudent?id=" + id,function(data){
 				/* alert(data.result); */
 				if("success" == data.result){
 					alert("删除成功!");
@@ -84,7 +84,7 @@
 						<td>${ s.s_c_id }</td>
 						<td>${ s.s_password }</td>
 						<td>${ s.s_dept }</td>
-						<td><a href="/ssh_hw_manage/manager/updateStudent_jsp?id=${s.id }" onclick="setbreadcrumb()">修改</a></td>
+						<td><a href="updateStudent_jsp?id=${s.id }" onclick="setbreadcrumb()">修改</a></td>
 						<td>
 							<a type="button" class="close" href = "javascript:del('${s.id }')">
 								<span class="glyphicon glyphicon-trash"></span>
@@ -99,8 +99,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

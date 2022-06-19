@@ -105,6 +105,16 @@
         <servlet-name>spring</servlet-name>  
         <url-pattern>*.js</url-pattern>  
     </servlet-mapping>  
+    
+    <!--验证码-->
+    <servlet>
+        <servlet-name>KaptchaServlet</servlet-name>
+        <servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KaptchaServlet</servlet-name>
+        <url-pattern>/kaptcha.jpg</url-pattern>
+    </servlet-mapping>
 
 
   <!-- 解决hibernate的Session的关闭与开启问题。 

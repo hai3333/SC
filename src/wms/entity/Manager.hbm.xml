@@ -9,8 +9,8 @@
 		This class contains the Manager detail. 
 		</meta>
 		<!-- name="实体表属性" column="数据库表属性" -->
-		<id name="id" column="id " type="int" />	
-		<property name="m_account" column="m_account " type="string" />	
+		<id name="id" column="id" type="int" />
+		<property name="m_account" column="m_account" type="string" />
 		<property name="m_name" column="m_name" type="string"/>
 		<property name="m_password" column="m_password" type="string"/>	
 	</class>

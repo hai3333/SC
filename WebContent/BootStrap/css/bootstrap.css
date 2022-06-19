@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
 }
+div{
+  white-space:nowrap;
+}
+
 article,
 aside,
 details,
@@ -240,6 +244,7 @@ th {
   }
   .navbar {
     display: none;
+
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1603,6 +1608,8 @@ pre code {
   }
 }
 .container-fluid {
+  /*width: 60px;*/
+  /*height: auto;*/
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;

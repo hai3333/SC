@@ -10,10 +10,11 @@
 <title>教师框架</title>
 
 <!-- 包含 bootstrap 样式表 -->
-<link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/sc/BootStrap/css/bootstrap.min.css">
+
 <!-- 可选: 包含 jQuery 库 -->
-<script src="BootStrap/js/jquery-2.1.1.min.js"></script>
-<script src="BootStrap/js/bootstrap.min.js"></script>
+<script src="/sc/BootStrap/js/jquery-2.1.1.min.js"></script>
+<script src="/sc/BootStrap/js/bootstrap.min.js"></script>
 
 <!--教师的整体框架-->
 <script type="text/javascript">
@@ -22,7 +23,7 @@
 		//作业总览
 		$("a.allworks").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_allworks?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_allworks?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>作业总览</li>");
 		});
@@ -30,7 +31,7 @@
 		//发布作业
 		$("a.publish").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_publishwork");
+			$("iframe").attr("src", "teacher/t_publishwork");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>发布作业</li>");
 		});
@@ -38,7 +39,7 @@
 		//公告总览
 		$("a.allnotice").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_allnotice?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_allnotice?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>公告总览</li>");
 		});
@@ -46,7 +47,7 @@
 		//发布公告
 		$("a.notice").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_publishnotice");
+			$("iframe").attr("src", "teacher/t_publishnotice");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>发布公告</li>");
 		});
@@ -54,7 +55,7 @@
 		//提交统计
 		$("a.statistics").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_statistics?t_account=${teacher.t_account  }");
+			$("iframe").attr("src", "teacher/t_statistics?t_account=${teacher.t_account  }");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>提交统计</li>");
 		});
@@ -62,7 +63,7 @@
 		//个人设置
 		$("a.t_personalseting").click(function() {
 			/* alert($("iframe").attr("src")); */
-			$("iframe").attr("src", "/ssh_hw_manage/teacher/t_personalseting");
+			$("iframe").attr("src", "teacher/t_personalseting");
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>个人设置</li>");
 		});
@@ -72,23 +73,25 @@
 </head>
 <body>
 
+
 	<!--整个页面栅格-->
 	<div class="container-fluid"
-		style="background-color: blasck; margin-left: 100px; margin-right: 100px; padding-top: 0px;">
+		style="background-color: ; margin-left: 100px; margin-right: 100px; padding-top: 0px;">
 		<div class="row-fluid">
 			<div class="span12">
 
 				<!--系统头部-->
 				<div class="page-header"
-					style="margin-top: 0px; height: 42px; clear: all;">
-					<h1 class="text-center">
+					style="margin-top: 0px; height: 42px;">
+					<h1 class="text-left">
 						<span><strong>作业管理系统</strong></span>
 						<!-- <img src="img/bom.gif" style="margin-left: 12%;"> -->
 					</h1>
 				</div>
 
 				<!--菜单栏-->
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-default" role="navigation" >
+
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse"
 							data-target="#bs-example-navbar-collapse-1">
@@ -97,7 +100,7 @@
 								class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#"><span
-							class="glyphicon glyphicon-pencil" style="font-size: 25px;"></span></a>
+							class="glyphicon glyphicon-home" style="font-size: 25px;"></span></a>
 					</div>
 
 					<div class="collapse navbar-collapse"
@@ -133,8 +136,9 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<!-- <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px;"></a>
-								--> <img src="img/header.gif" class="img-circle"
-								style="width: 40px; height: 40px;">
+								-->
+<%--								<img src="img/header.gif" class="img-circle"--%>
+<%--								style="width: 40px; height: 40px;">--%>
 							</li>
 							<li><strong><span style="line-height:55px;">教师:&nbsp;${teacher.t_name  }</span></strong></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -161,9 +165,9 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div style="height: 1000px;">
-							<iframe src="/ssh_hw_manage/teacher/t_allworks?t_account=${teacher.t_account  }" frameborder="0"
+							<iframe src="teacher/t_home?t_account=${teacher.t_account}" frameborder="0"
 								seamless="seamless" scrolling="no" marginheight="0px" marginwidth="0px"
-								width="100%" height="100%""></iframe>
+								width="100%" height="100%"></iframe>
 						</div>
 					</div>
 				</div>

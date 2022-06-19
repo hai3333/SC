@@ -18,6 +18,8 @@ import wms.service.IManagerService;
 import wms.service.IStudentManager;
 import wms.service.ITeacherManager;
 
+import static com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY;
+
 @Controller
 public class HomeController {
 	
@@ -44,12 +46,36 @@ public class HomeController {
 	/**
 	 * 登录操作
 	 */
-	@RequestMapping(value="/login",method=RequestMethod.GET)
-	public String login(String account,String password,String type,HttpSession session){
+	@RequestMapping(value="/login",method=RequestMethod.POST)
+	public String login(String account,String password,String type,String code,HttpSession  session){
 		System.out.println("输入的账号和姓名："+account+","+password);
 		List<String> listNav = new ArrayList<String>();
 		listNav.add("首页");//设置面包屑导航
 		session.setAttribute("listNav", listNav);
+		/*
+		* 验证码验证
+		*
+		* */
+		String o = (String) session.getAttribute(KAPTCHA_SESSION_KEY);
+		System.out.println(o);
+		if(o==null){
+			session.setAttribute("errMsg","请输入验证码");
+			return "/login";
+		}
+
+
+		try {
+			if(!o.equalsIgnoreCase(code)){
+				session.setAttribute("errMsg","验证码错误！！");
+				return "/login";
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			System.out.println("");
+		}
+
+
 		if( type.equals("Manager") ){//如果类型等于管理员
 			//通过账号得到一个教师对象，判断 (账号是否为空)-和-(密码是否正确) 
 			Manager manager = managerManager.getManagerLogin(account);	

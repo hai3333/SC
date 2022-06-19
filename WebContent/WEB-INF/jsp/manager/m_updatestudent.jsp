@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
 	<title>学生管理-修改</title>
 </head>
 <body>
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
-				<form class="form-horizontal" action="/ssh_hw_manage/manager/updateStudent" method="post" role="form">
+				<form class="form-horizontal" action="updateStudent" method="post" role="form">
 					<input type="hidden" name="id" value="${s.id}"  /><!-- 隐藏域，传递教师id -->
 					<div class="form-group">
 						 <label for="inputEmail3" class="col-sm-2 control-label">账号:</label>
@@ -67,8 +67,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
 	<title>教师管理</title>
 	
 	<script type="text/javascript">
 		//删除教师
 		function del(id){
-			$.get("/ssh_hw_manage/manager/delTeacher?id=" + id,function(data){
+			$.get("delTeacher?id=" + id,function(data){
 				if("success" == data.result){
 					alert("删除成功!");
 					window.location.reload(); 
@@ -46,11 +46,7 @@
 	<%
 		int a = 0;
 	%>
-	
-	<div class="text-center">
-		<strong style="font-size:20px;">教师总览</strong>
-	</div>
-	<table class="table table-hover table-bordered table-striped">
+	<table class="table table-hover table-bordered table-striped" >
 		<thead>
 			<tr>
 				<th>序号</th>
@@ -78,7 +74,7 @@
 						<td>${ t.t_sex }</td>
 						<td>${ t.t_dept }</td>
 						<td>${ t.t_password }</td>
-						<td><a href="/ssh_hw_manage/manager/updateTeacher_jsp?id=${t.id }" onclick="setbreadcrumb()">修改</a></td>
+						<td><a href="updateTeacher_jsp?id=${t.id }" onclick="setbreadcrumb()">修改</a></td>
 						<td>
 							<a type="button" class="close" href = "javascript:del('${t.id }')">
 								<span class="glyphicon glyphicon-trash"></span>
@@ -94,8 +90,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

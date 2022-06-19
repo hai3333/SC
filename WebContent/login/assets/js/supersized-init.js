@@ -20,10 +20,14 @@ jQuery(function($){
         // 组件
         slide_links        : 'blank',    // 个别环节为每张幻灯片（选项：假的，'民'，'名'，'空'）
         slides             : [    // 幻灯片影像
-                                 {image : 'login/assets/img/1.jpg'},
-                                 {image : 'login/assets/img/2.gif'},
-                                 {image : 'login/assets/img/3.jpg'},
-                                 {image : 'login/assets/img/4.jpg'}
+                                 // {image : 'login/assets/img/1.jpg'},
+                                 // {image : 'login/assets/img/2.gif'},
+                                 // {image : 'login/assets/img/3.jpg'},
+                                 // {image : 'login/assets/img/4.jpg'}
+            {image : 'login/assets/img/background.jpg'},
+            {image : 'login/assets/img/background.jpg'},
+            {image : 'login/assets/img/background.jpg'},
+            {image : 'login/assets/img/background.jpg'}
                        ]
 
     });

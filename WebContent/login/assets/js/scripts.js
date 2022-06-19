@@ -4,6 +4,7 @@ jQuery(document).ready(function() {
     $('.page-container form').submit(function(){
         var username = $(this).find('.username').val();
         var password = $(this).find('.password').val();
+        //var code = $(this).find(".code").val();
         if(username == '') {
             $(this).find('.error').fadeOut('fast', function(){
                 $(this).css('top', '27px');
@@ -23,10 +24,12 @@ jQuery(document).ready(function() {
             });
             return false;
         }
+
     });
 
     $('.page-container form .username, .page-container form .password').keyup(function(){
         $(this).parent().find('.error').fadeOut('fast');
     });
+
 
 });

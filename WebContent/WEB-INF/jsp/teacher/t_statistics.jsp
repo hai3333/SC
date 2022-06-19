@@ -11,17 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1
     	user-scalable=no">
     <!-- 包含 bootstrap 样式表 -->
-    <link rel="stylesheet" href="/ssh_hw_manage/BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
     <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="/ssh_hw_manage/BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="/ssh_hw_manage/BootStrap/js/bootstrap.min.js"></script>
+    <script src="../BootStrap/js/bootstrap.min.js"></script>
 	<title>教师提交统计</title>
 	<script type="text/javascript">
 	//班级作业统计
 	function show(w_id,c_id){
-		$("iframe").attr("src","/ssh_hw_manage/teacher/checkwork?w_id="+w_id+"&c_id="+c_id);
+		$("iframe").attr("src","checkwork?w_id="+w_id+"&c_id="+c_id);
 	}
 	</script>
 	
@@ -50,10 +50,10 @@
 									for(int i=0; i<clazz.size(); i++){
 										%>
 											<div class="panel-heading" style="height: 35px;">
-												 <a class="panel-title" data-toggle="collapse" data-parent="#panel-614308" href="#<%=clazz.get(i) %>"><%=clazz.get(i) %>
+												 <a class="panel-title" data-toggle="collapse" data-parent="#panel-614308" href="#<%=clazz.get(i)%>"><%=clazz.get(i) %>
 												 <strong class="caret"></strong></a>
 											</div>
-											<div id="<%=clazz.get(i) %>" class="panel-collapse collapse in"  aria-expanded="false">
+											<div id="<%=clazz.get(i)%>" class="panel-collapse collapse in"  aria-expanded="false">
 										<%
 										for(int j=0; j<work.size(); j++){
 											if(work.get(j).getW_c_id().equals(clazz.get(i))){
@@ -80,7 +80,7 @@
 <!--显示区-->
 		<div class="col-md-10 column" style="background-color: white;height: 1000px;">
 			<!--iframe标签-->	
-			<iframe src="" frameborder="0"  seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%""></iframe>
+			<iframe src="" frameborder="0"  seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%"></iframe>
 		</div>													<!-- scrolling="no" -->
 	</div>
 </div>

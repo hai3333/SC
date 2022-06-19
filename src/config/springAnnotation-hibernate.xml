@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd" [
 
-<!ENTITY contextInclude SYSTEM "org/springframework/web/context/WEB-INF/contextInclude.xml">
+<!--<!ENTITY contextInclude SYSTEM "org/springframework/web/context/WEB-INF/contextInclude.xml">-->
 
 ]>
 
@@ -13,9 +13,12 @@
 		<!-- 数据库的驱动 -->
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<!-- 数据库的Id,用户名与密码 -->
-		<property name="url" value="jdbc:mysql://47.101.198.61/ssh_hw_manage" />
+	<!--	<property name="url" value="jdbc:mysql://47.101.198.61/ssh_hw_manage" />
 		<property name="username" value="ssh_hw_manage" />
-		<property name="password" value="ssh_hw_manage" />
+		<property name="password" value="ssh_hw_manage" />-->
+		<property name="url" value="jdbc:mysql://gz-cynosdbmysql-grp-md25f3y5.sql.tencentcdb.com:21694/ssh_hw_manage?serverTimezone=UTC&amp;useSSL=false" />
+		<property name="username" value="root" />
+		<property name="password" value="HFShfs_123" />
 	</bean>
 
 	<bean id="sessionFactory"

@@ -90,7 +90,7 @@
 			<div class="span12">
 			<!-- 顶部 -->
 			<div class="page-header" style="margin-top: 0px;height: 42px;clear: all;">
-				<h1 class="text-left" ><strong>作业管理系统</strong></h1>
+				<h1 class="text-center" ><strong>作业管理系统</strong></h1>
 			</div>
 			
 			<!-- 菜单栏 -->
@@ -98,7 +98,7 @@
 				<div class="container-fluid">
 				
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home" style="font-size: 25px;"></span></a>
+						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-pencil" style="font-size: 25px;"></span></a>
 					</div>
 					
 					<div>
@@ -144,11 +144,11 @@
 							
 						</ul>
 					</div>
-					
+
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<!-- <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px;"></a> -->
-<%--							<img src="img/header.gif" class = "img-circle" style="width: 40px;height: 40px;">--%>
+							<img src="img/header.gif" class = "img-circle" style="width: 40px;height: 40px;">
 						</li>
 						<li><strong><span style="line-height:55px;">管理员:&nbsp;${manager.m_name  }</span></strong></li>
 						<li class="dropdown">
@@ -175,9 +175,9 @@
 			<hr>
 			
 			<!--iframe框架内容-->
-			<div class="row-fluid" ><!--m_teachermanage.html   -->
+			<div class="row-fluid"  style="width: 100%"><!--m_teachermanage.html   -->
 				<div class="span12">
-					<div style="height: 1000px;"><!-- seamless="seamless" 无边框或滚动条 -->
+					<div style="height: 100%;"><!-- seamless="seamless" 无边框或滚动条 -->
 					    <iframe src="manager/m_teachermanage" frameborder="0" seamless="seamless" marginheight="0px" marginwidth="0px" width="100%" height="100%"></iframe>
 
 					</div>
