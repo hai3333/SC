@@ -9,12 +9,12 @@
 	content="width=device-width, initial-scale=1
     	user-scalable=no">
 <!-- 包含 bootstrap 样式表 -->
-<link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/sc/BootStrap/css/bootstrap.min.css">
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
 <!-- 可选: 包含 jQuery 库 -->
-<script src="BootStrap/js/jquery-3.1.1.js"></script>
+<script src="/sc/BootStrap/js/jquery-3.1.1.js"></script>
 <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-<script src="BootStrap/js/bootstrap.min.js"></script>
+<script src="/sc/BootStrap/js/bootstrap.min.js"></script>
 <title>学生框架</title>
 <!--学生的整体框架-->
 <script type="text/javascript">
@@ -22,9 +22,9 @@
 
 		//主页
 		$("a.navbar-brand").click(function() {
-			$("iframe").attr("src", "/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account }");
+			$("iframe").attr("src", "student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account }");
 			//面包屑导航
-			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"); 
+			$("ol.breadcrumb").html("<li><a href='/sc/student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account }''>首页</a></li>");
 		});
 
 		//个人设置
@@ -54,6 +54,7 @@
 			//面包屑导航
 			$("ol.breadcrumb").html("<li><a href='javascript:void(0)''>首页</a></li>"+"<li class='active'>查看批阅</li>");
 		});
+
 	});
 </script>
 </head>
@@ -71,8 +72,8 @@
 
 				<!--系统头部-->
 				<div class="page-header"
-					style="margin-top: 0px; height: 42px; clear: all;">
-					<h1 class="text-center">
+					style="margin-top: 0px; height: 42px; clear: all; ">
+					<h1 class="text-left" >
 						<span><strong>作业管理系统</strong></span>
 						<!-- <img src="img/bom.gif" style="margin-left: 12%;"> -->
 					</h1>
@@ -88,7 +89,7 @@
 								class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#"><span
-							class="glyphicon glyphicon-pencil" style="font-size: 25px;"></span></a>
+							class="glyphicon glyphicon-home" style="font-size: 25px;"></span></a>
 					</div>
 
 					<div class="collapse navbar-collapse"
@@ -97,12 +98,15 @@
 							<li><a href="#" class="dropdown-toggle upload">上传作业</a></li>
 							<!-- <li><a href="#" class="dropdown-toggle download">下载作业</a></li> -->
 							<li><a href="#" class="dropdown-toggle showcheck">查看批阅</a></li>
+
+
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<!-- <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px;"></a>
-								--> <img src="img/header.gif" class="img-circle"
-								style="width: 40px; height: 40px;">
+								-->
+<%--								<img src="img/header.gif" class="img-circle"--%>
+<%--								style="width: 40px; height: 40px;">--%>
 							</li>
 							<li><strong><span style="line-height:55px;">学生:&nbsp;${student.s_name  }</span></strong></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -130,8 +134,8 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div style="height: 1000px;">
-							<iframe src="student/s_home?c_id=${student.s_c_id }&s_account=${student.s_account}" frameborder="0"
-								seamless="seamless" marginheight="0px" marginwidth="0px"
+							<iframe src="student/s_home?c_id=${student.s_c_id}&s_account=${student.s_account}" frameborder="0"
+								seamless="seamless" marg inheight="0px" marginwidth="0px"
 								width="100%" height="100%"></iframe>
 						</div>
 					</div>

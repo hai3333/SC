@@ -54,7 +54,23 @@ public class TeacherController {
 	private IStudentManager studentManager;
 	
 	/**********************************framework(导航栏)页面操作*************************************************/
-	
+	/*
+	* 主页面
+	* */
+	@RequestMapping(value="/t_home")
+	public String t_home(@RequestParam("t_account") String t_account,Model model){
+		List<Work> work = workManager.getAllWork();
+		List<Work> resuletWork = new ArrayList<Work>();
+		for(int i=0; i<work.size(); i++){
+			if(work.get(i).getW_t_account().equals(t_account)){
+				resuletWork.add(work.get(i));
+			}
+		}
+		model.addAttribute("work", resuletWork);
+		return "teacher/t_home";
+	}
+
+
 	/*
 	 * 教师界面(导航栏)----我的作业---总览--页面（内嵌）
 	 */

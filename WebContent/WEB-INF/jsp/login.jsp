@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<script src="/sc/BootStrap/js/jquery-2.1.1.min.js"></script>
+<script src="/sc/BootStrap/js/bootstrap.min.js"></script>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,25 +24,45 @@
 				var errMsg = document.getElementById("errMsg");
 				//重置错误信息对象内容
 				errMsg.innerHTML = "";
-			}
+
+			};
+
 		</script>
+        <script type="text/javascript">
+            $(function () {
+                $("#codeImg").click(function () {
+                   // alert(this.src)
+                    this.src="/sc/kaptcha.jpg?="+new Date();
+                });
+
+            });
+
+
+        </script>
 
     </head>
 	<body>
+
+
+
+
 		<div class="page-container">
             <h1>作业管理系统</h1>
-            <form id="login" action="login" method="get">
+            <form id="login" action="login" method="post">
                 <input type="text" name="account" class="account" placeholder="请输入您的账号！">
                 <input type="password" name="password" class="password" placeholder="请输入您的用户密码！"><br><br>
-                <strong>类型：</strong>
-				<select  name = "type" id = "type" style="background: transparent;color:white;">
+               <strong>类型：</strong>
+				<select  name = "type" id = "type" style="background: transparent;color:white;text-align: left">
 					<option name = "type" value = "type" style="background-color: #AAAAAA">== &nbsp;类型  &nbsp;==</option>
 					<option name = "type" value = "Manager" style="background-color: #AAAAAA">管理员</option>
 					<option name = "type" value = "Teacher"  style="background-color: #AAAAAA">教师</option>
 					<option name = "type" value = "Student"  style="background-color: #AAAAAA">学生</option>
-				</select><br/><br/>
+				</select><br/><br>
+                <input class="code" name="code" type="text" style="width: 110px;"/>
+                <img  id="codeImg" name="codeImg" alt="" src="kaptcha.jpg" style="float: right;height: 40px ;width: 120px;margin-top:25px ">
+
 				<h2><font id="errMsg" color="red">${errMsg}</font></h2>
-                <button type="submit" class="submit_button">登 录</button>&nbsp;&nbsp;
+                <button type="submit" class="submit_button" >登 录</button>&nbsp;&nbsp;
                 <button type="button" class="submit_button" onclick = "Reset()">重 置</button><br><br><br>
                 <div class="error"><span>+</span></div>
                 

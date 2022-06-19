@@ -17,6 +17,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -60,15 +61,7 @@ public class StudentController {
 		return "/student/s_personalseting";
 	}
 	
-	@RequestMapping("/getAllNotice")
-	public String getAllNotice(Student student,HttpSession request){
-		if (studentManager.updateStudentPassword(student)){
-			student = studentManager.getStudentLogin(student.getS_account());
-			request.setAttribute("student", student);
-		}
-		
-		return "/student/s_personalseting";
-	}
+
 	
 	@RequestMapping(value="/s_home")
 	public String s_home(String c_id,String s_account,HttpSession request){
@@ -141,6 +134,7 @@ public class StudentController {
 	
 	
 	//上传文件
+//	@ResponseBody
 	@RequestMapping(value="/s_uploadwork")
 	public String s_uploadwork(@RequestParam("s_account") String s_account,@RequestParam("clazz") String clazz,@RequestParam("w_title") String w_title,  HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IllegalStateException, IOException{
 		System.out.println("上传文件页面:提交时间="+s_account+","+clazz+","+w_title);//学号，

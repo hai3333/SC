@@ -11,9 +11,9 @@
     <!-- 包含 bootstrap 样式表 -->
     <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="../BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="/sc/BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="../BootStrap/js/bootstrap.min.js"></script>
+    <script src="/sc/BootStrap/js/bootstrap.min.js"></script>
 	<title>发布作业</title>
 	<!--教师的整体框架-->
 </head>
@@ -69,8 +69,8 @@
 
 <!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
     <!-- 可选: 包含 jQuery 库 -->
-    <script src="BootStrap/js/jquery-3.1.1.js"></script>
+    <script src="/sc/BootStrap/js/jquery-3.1.1.js"></script>
     <!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
-    <script src="BootStrap/js/bootstrap.min.js"></script>
+    <script src="/sc/BootStrap/js/bootstrap.min.js"></script>
 </body>
 </html>

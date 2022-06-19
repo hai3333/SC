@@ -43,7 +43,7 @@
 										修改姓名
 									</h4>
 								</div>
-								<form action="student/updateStudentName"  method = "post" >
+								<form action="/sc/student/updateStudentName"  method = "post" >
 								<div class="modal-body">
 									<input type = "hidden" name = "id"  value = "${student.id }"/>								<!--修改内容提示  -->
 									<input type = "hidden" name = "s_account"  value = "${student.s_account }"/>
@@ -73,7 +73,7 @@
 										修改密码
 									</h4>
 								</div>
-								<form action="student/updateStudentPassword" method = "post">
+								<form action="/sc/student/updateStudentPassword" method = "post">
 								<div class="modal-body">
 									<input type = "hidden" name = "id"  value = "${student.id }"/>								<!--修改内容提示  -->
 									<input type = "hidden" name = "s_account"  value = "${student.s_account }"/>
